@@ -5,7 +5,7 @@ class Nameintro extends Component {
   state = {};
   render() {
     return (
-      <div style={{ marginLeft: 200, marginTop: 100 }} id="vivanName">
+      <div style={{ marginLeft: 170, marginTop: 100 }} id="vivanName">
         <div style={{ fontFamily: "Unna", fontStyle: "italic", fontSize: 130 }}>
           vivan &nbsp;
         </div>

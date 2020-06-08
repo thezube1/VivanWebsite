@@ -1,10 +1,16 @@
 import React from "react";
 import NameIntro from "./components/nameintro";
+import LatestArticle from "./components/latestarticle";
 
 function App() {
   return (
     <React.Fragment>
-      <NameIntro />
+      <div style={{ display: "inline-block" }}>
+        <NameIntro />
+      </div>
+      <div style={{ display: "inline-block" }}>
+        <LatestArticle />
+      </div>
     </React.Fragment>
   );
 }
