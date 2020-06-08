@@ -1,23 +1,57 @@
 import React, { Component } from "react";
+import headshot from "../photos/headshotSmaller.png";
 
 class Nameintro extends Component {
   state = {};
   render() {
     return (
       <div style={{ marginLeft: 200, marginTop: 100 }} id="vivanName">
-        <div style={{ fontFamily: "Unna", fontStyle: "italic", fontSize: 100 }}>
-          Vivan &nbsp;
+        <div style={{ fontFamily: "Unna", fontStyle: "italic", fontSize: 130 }}>
+          vivan &nbsp;
         </div>
         <div
           style={{
             fontFamily: "Unna",
             fontStyle: "Bold 700",
-            fontSize: 100,
+            fontSize: 130,
             position: "relative",
-            top: -30,
+            top: -60,
           }}
         >
-          Marwaha
+          marwaha
+        </div>
+        <div>
+          <span
+            style={{
+              position: "relative",
+              left: 20,
+              fontFamily: "Unna",
+              fontStyle: "italic",
+            }}
+          >
+            <hr
+              style={{
+                width: 140,
+                marginLeft: 0,
+                color: "Black",
+                borderWidth: 1,
+              }}
+            />
+            Writer, philanthropist,
+            <br /> and more. The invisible <br />
+            social power of technology. <br />
+          </span>
+          <img
+            src={headshot}
+            alt="Vivan headshot"
+            style={{
+              width: 500,
+              height: 420,
+              position: "relative",
+              top: -215,
+              right: -80,
+            }}
+          />
         </div>
       </div>
     );
