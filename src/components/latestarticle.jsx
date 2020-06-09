@@ -4,36 +4,39 @@ class LatestArticle extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div
+        id="latestArticle"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "10% 1fr 1fr",
+          gridAutoRows: "minmax(200px, auto)",
+          alignItems: "end",
+        }}
+      >
+        <div style={{ backgroundColor: "red" }}>Words1</div>
         <div
           style={{
             height: 20,
             width: 20,
             backgroundColor: "black",
-            position: "relative",
-            bottom: -150,
-            right: -100,
             display: "flex",
-            justifyContent: "center",
             alignItems: "center",
           }}
         >
           <div
             style={{
-              position: "absolute",
-              left: 30,
+              fontSize: 40,
               fontFamily: "Unna",
               fontStyle: "italic",
               fontWeight: "bold",
-              fontSize: 35,
+              position: "relative",
+              left: "150%",
             }}
           >
-            latest
+            Latest
           </div>
         </div>
-        <div id="article name" style={{ position: "relative" }}>
-          Article Title
-        </div>
+        <div style={{ backgroundColor: "black" }}>Words2</div>
       </div>
     );
   }
