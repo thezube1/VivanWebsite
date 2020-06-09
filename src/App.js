@@ -4,14 +4,14 @@ import LatestArticle from "./components/latestarticle";
 
 function App() {
   return (
-    <React.Fragment>
-      <div style={{ display: "inline-block" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+      <div>
         <NameIntro />
       </div>
-      <div style={{ display: "inline-block" }}>
+      <div>
         <LatestArticle />
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 
