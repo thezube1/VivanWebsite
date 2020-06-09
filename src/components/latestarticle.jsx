@@ -13,7 +13,7 @@ class LatestArticle extends Component {
           alignItems: "end",
         }}
       >
-        <div style={{ backgroundColor: "red" }}>Words1</div>
+        <div></div>
         <div
           style={{
             height: 20,
@@ -36,7 +36,7 @@ class LatestArticle extends Component {
             Latest
           </div>
         </div>
-        <div style={{ backgroundColor: "black" }}>Words2</div>
+        <div></div>
       </div>
     );
   }
