@@ -5,17 +5,19 @@ class Nameintro extends Component {
   state = {};
   render() {
     return (
-      <div style={{ marginLeft: 170, marginTop: 100 }} id="vivanName">
-        <div style={{ fontFamily: "Unna", fontStyle: "italic", fontSize: 130 }}>
+      <div style={{ marginLeft: "11vw", marginTop: "4vw" }} id="vivanName">
+        <div
+          style={{ fontFamily: "Unna", fontStyle: "italic", fontSize: "9vw" }}
+        >
           vivan &nbsp;
         </div>
         <div
           style={{
             fontFamily: "Unna",
             fontWeight: "bold",
-            fontSize: 130,
+            fontSize: "9vw",
             position: "relative",
-            top: -60,
+            top: "-5vw",
           }}
         >
           marwaha
@@ -24,7 +26,7 @@ class Nameintro extends Component {
           <span
             style={{
               position: "relative",
-              left: 20,
+              left: "1vw",
               fontFamily: "Unna",
               fontStyle: "italic",
             }}
@@ -45,10 +47,12 @@ class Nameintro extends Component {
             src={headshot}
             alt="Vivan headshot"
             style={{
-              width: 500,
-              height: 420,
+              display: "block",
+              maxWidth: "100%",
+              width: "400",
+              height: "350",
               position: "relative",
-              top: -215,
+              top: "-15.5vw",
               right: -80,
             }}
           />
