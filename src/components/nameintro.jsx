@@ -12,7 +12,7 @@ class Nameintro extends Component {
         <div
           style={{
             fontFamily: "Unna",
-            fontStyle: "Bold 700",
+            fontWeight: "bold",
             fontSize: 130,
             position: "relative",
             top: -60,

@@ -24,11 +24,15 @@ class LatestArticle extends Component {
               left: 30,
               fontFamily: "Unna",
               fontStyle: "italic",
+              fontWeight: "bold",
               fontSize: 35,
             }}
           >
-            Latest
+            latest
           </div>
+        </div>
+        <div id="article name" style={{ position: "relative" }}>
+          Article Title
         </div>
       </div>
     );
