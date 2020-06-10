@@ -8,9 +8,9 @@ class LatestArticle extends Component {
         id="latestArticle"
         style={{
           display: "grid",
-          gridTemplateRows: "50px 70px 0px",
+          gridTemplateRows: "150px 20px 50px",
           gridTemplateColumns: "1fr",
-          gridTemplateAreas: ` "box1" "title1" "main1"`,
+          gridTemplateAreas: ` "box1" "title1" "main1" `,
         }}
       >
         <div
@@ -21,6 +21,7 @@ class LatestArticle extends Component {
             display: "flex",
             alignItems: "center",
             gridColumn: "box1",
+            alignSelf: "end",
           }}
         >
           <div
@@ -49,7 +50,7 @@ class LatestArticle extends Component {
         <div
           style={{
             display: "grid",
-            gridAutoColumns: "600px",
+            gridAutoColumns: "450px",
             gridColumn: "main1",
           }}
         >
