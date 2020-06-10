@@ -24,7 +24,13 @@ class Nameintro extends Component {
             marwaha
           </div>
         </div>
-        <div id="images" style={{ display: "flex", flexDirection: "center" }}>
+        <div
+          id="images"
+          style={{
+            display: "flex",
+            alignItems: "flex-start",
+          }}
+        >
           <span
             style={{
               position: "relative",
@@ -39,7 +45,11 @@ class Nameintro extends Component {
           <img
             src={headshot}
             alt="Image of vivan"
-            style={{ width: 480, height: 400 }}
+            style={{
+              position: "relative",
+              width: 480,
+              height: 400,
+            }}
           />
         </div>
       </div>
