@@ -13,7 +13,6 @@ class LatestArticle extends Component {
           alignItems: "end",
         }}
       >
-        <div></div>
         <div
           style={{
             height: 20,
@@ -36,7 +35,6 @@ class LatestArticle extends Component {
             Latest
           </div>
         </div>
-        <div></div>
       </div>
     );
   }

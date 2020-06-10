@@ -1,10 +1,18 @@
 import React from "react";
 import NameIntro from "./components/nameintro";
 import LatestArticle from "./components/latestarticle";
+import "./App.css";
 
 function App() {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+    <div
+      id="wrapper"
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(100px, 600px))",
+        justifyContent: "center",
+      }}
+    >
       <div>
         <NameIntro />
       </div>

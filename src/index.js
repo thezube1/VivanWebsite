@@ -5,11 +5,9 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <div
-    style={{ display: "flex", alightItems: "center", justifyContent: "center" }}
-  >
+  <React.Fragment>
     <App />
-  </div>,
+  </React.Fragment>,
   document.getElementById("root")
 );
 
