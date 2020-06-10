@@ -8,9 +8,9 @@ function App() {
     <div
       id="wrapper"
       style={{
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, 600px)",
+        gridTemplateRows: "600px 600px",
       }}
     >
       <div>

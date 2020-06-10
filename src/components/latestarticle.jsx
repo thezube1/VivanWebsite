@@ -4,7 +4,15 @@ class LatestArticle extends Component {
   state = {};
   render() {
     return (
-      <div id="latestArticle" style={{ marginTop: 110 }}>
+      <div
+        id="latestArticle"
+        style={{
+          display: "grid",
+          gridTemplateRows: "50px 70px 0px",
+          gridTemplateColumns: "1fr",
+          gridTemplateAreas: ` "box1" "title1" "main1"`,
+        }}
+      >
         <div
           style={{
             height: 20,
@@ -12,11 +20,12 @@ class LatestArticle extends Component {
             backgroundColor: "black",
             display: "flex",
             alignItems: "center",
+            gridColumn: "box1",
           }}
         >
           <div
             style={{
-              fontSize: 40,
+              fontSize: 30,
               fontFamily: "Unna",
               fontStyle: "italic",
               fontWeight: "bold",
@@ -24,11 +33,26 @@ class LatestArticle extends Component {
               left: "150%",
             }}
           >
-            Latest
+            latest
           </div>
         </div>
-        <div>Article Title</div>
-        <div style={{ display: "grid", gridAutoColumns: "600px" }}>
+        <div
+          style={{
+            fontFamily: "Unna",
+            fontWeight: "bold",
+            gridColumn: "title1",
+            fontSize: 18,
+          }}
+        >
+          Article Title
+        </div>
+        <div
+          style={{
+            display: "grid",
+            gridAutoColumns: "600px",
+            gridColumn: "main1",
+          }}
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
           explicabo quisquam architecto minima, necessitatibus dolores odit quod
           modi excepturi ducimus suscipit, ullam eaque sunt. Perspiciatis

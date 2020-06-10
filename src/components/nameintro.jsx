@@ -5,53 +5,63 @@ class Nameintro extends Component {
   state = {};
   render() {
     return (
-      <div style={{ marginTop: 110 }} id="nameIntro">
-        <div id="nameText">
-          <div
-            style={{ fontFamily: "Unna", fontStyle: "italic", fontSize: 120 }}
-          >
-            vivan &nbsp;
-          </div>
-          <div
-            style={{
-              fontFamily: "Unna",
-              fontWeight: "bold",
-              fontSize: 120,
-              position: "relative",
-              top: -65,
-            }}
-          >
-            marwaha
-          </div>
-        </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "300 300",
+          gridTemplateRows: "100px 70px 80px 650px",
+          gridTemplateAreas: ` ". ."
+                               "text1 text1" 
+                               "text2 text2"
+                               "text3 image1" `,
+        }}
+        id="nameIntro"
+      >
         <div
-          id="images"
           style={{
-            display: "flex",
-            alignItems: "flex-start",
+            fontFamily: "Unna",
+            fontStyle: "italic",
+            fontSize: 120,
+            gridArea: "text1",
           }}
         >
-          <span
-            style={{
-              position: "relative",
-              fontFamily: "Unna",
-              fontStyle: "italic",
-            }}
-          >
-            Writer, philanthropist,
-            <br /> and more. The invisible <br />
-            social power of technology. <br />
-          </span>
-          <img
-            src={headshot}
-            alt="Image of vivan"
-            style={{
-              position: "relative",
-              width: 480,
-              height: 400,
-            }}
-          />
+          vivan &nbsp;
         </div>
+        <div
+          style={{
+            fontFamily: "Unna",
+            fontWeight: "bold",
+            fontSize: 120,
+            gridArea: "text2",
+          }}
+        >
+          marwaha
+        </div>
+        <div
+          style={{
+            position: "relative",
+            fontFamily: "Unna",
+            fontStyle: "italic",
+            gridArea: "text3",
+            top: 100,
+            left: 50,
+            alignSelf: "start",
+          }}
+        >
+          Writer, philanthropist,
+          <br /> and more. The invisible <br />
+          social power of technology. <br />
+        </div>
+        <img
+          src={headshot}
+          alt="Image of vivan"
+          style={{
+            position: "relative",
+            right: 60,
+            width: "100%",
+            gridArea: "image1",
+          }}
+        />
       </div>
     );
   }

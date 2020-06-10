@@ -1,0 +1,9 @@
+#wrapper {
+  justify-content: center;
+}
+
+@media screen and (max-width: 620px) {
+  #wrapper {
+    justify-content: stretch;
+  }
+}
