@@ -9,7 +9,7 @@ class Nameintro extends Component {
         style={{
           display: "grid",
           gridTemplateColumns: "300 300",
-          gridTemplateRows: "100px 70px 80px 650px",
+          gridTemplateRows: "100px 140px 63px 650px",
           gridTemplateAreas: ` ". ."
                                "text1 text1" 
                                "text2 text2"
@@ -21,7 +21,7 @@ class Nameintro extends Component {
           style={{
             fontFamily: "Unna",
             fontStyle: "italic",
-            fontSize: 120,
+            fontSize: 187,
             gridArea: "text1",
           }}
         >
@@ -31,7 +31,7 @@ class Nameintro extends Component {
           style={{
             fontFamily: "Unna",
             fontWeight: "bold",
-            fontSize: 120,
+            fontSize: 110,
             gridArea: "text2",
           }}
         >
@@ -42,9 +42,9 @@ class Nameintro extends Component {
             position: "relative",
             fontFamily: "Unna",
             fontStyle: "italic",
+            fontSize: 18,
             gridArea: "text3",
             top: 100,
-            left: 50,
             alignSelf: "start",
           }}
         >
@@ -57,8 +57,8 @@ class Nameintro extends Component {
           alt="Image of vivan"
           style={{
             position: "relative",
-            right: 60,
-            width: "100%",
+            right: 120,
+            width: "170%",
             gridArea: "image1",
           }}
         />

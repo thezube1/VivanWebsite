@@ -9,8 +9,9 @@ function App() {
       id="wrapper"
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, 600px)",
+        gridTemplateColumns: "repeat(auto-fit, 430px)",
         gridTemplateRows: "600px 600px",
+        gridColumnGap: 200,
       }}
     >
       <div>

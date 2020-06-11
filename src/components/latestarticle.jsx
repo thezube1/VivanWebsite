@@ -8,9 +8,9 @@ class LatestArticle extends Component {
         id="latestArticle"
         style={{
           display: "grid",
-          gridTemplateRows: "150px 20px 50px",
           gridTemplateColumns: "1fr",
-          gridTemplateAreas: ` "box1" "title1" "main1" `,
+          gridTemplateRows: "1fr 1fr 1fr",
+          gridTemplateAreas: `"." "desc" "latestTopic"`,
         }}
       >
         <div
@@ -20,8 +20,7 @@ class LatestArticle extends Component {
             backgroundColor: "black",
             display: "flex",
             alignItems: "center",
-            gridColumn: "box1",
-            alignSelf: "end",
+            gridArea: "desc",
           }}
         >
           <div
@@ -37,30 +36,41 @@ class LatestArticle extends Component {
             latest
           </div>
         </div>
-        <div
-          style={{
-            fontFamily: "Unna",
-            fontWeight: "bold",
-            gridColumn: "title1",
-            fontSize: 18,
-          }}
+        <a
+          href="https://www.livemint.com/news/india/hope-and-anxiety-among-liberalization-s-children-11577803916064.html"
+          target="_blank"
+          style={{ textDecoration: "none", gridArea: "latestTopic" }}
         >
-          Article Title
-        </div>
-        <div
-          style={{
-            display: "grid",
-            gridAutoColumns: "450px",
-            gridColumn: "main1",
-          }}
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          explicabo quisquam architecto minima, necessitatibus dolores odit quod
-          modi excepturi ducimus suscipit, ullam eaque sunt. Perspiciatis
-          laborum explicabo officia vel laudantium reiciendis dolore, doloribus,
-          dignissimos vero possimus saepe veniam facilis odit. Voluptatem, eius
-          laborum ea amet dolore voluptatum fuga corrupti error.
-        </div>
+          <div
+            style={{
+              fontFamily: "Unna",
+              fontWeight: "bold",
+              fontSize: 18,
+              position: "relative",
+              bottom: 40,
+            }}
+          >
+            <mark style={{ backgroundColor: "rgb(252 186 3)" }}>
+              Hope and anxiety among liberalization’s children
+            </mark>
+          </div>
+          <div
+            style={{
+              display: "grid",
+              gridAutoColumns: "470px",
+              gridColumn: "main1",
+              color: "black",
+            }}
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            explicabo quisquam architecto minima, necessitatibus dolores odit
+            quod modi excepturi ducimus suscipit, ullam eaque sunt. Perspiciatis
+            laborum explicabo officia vel laudantium reiciendis dolore,
+            doloribus, dignissimos vero possimus saepe veniam facilis odit.
+            Voluptatem, eius laborum ea amet dolore voluptatum fuga corrupti
+            error.
+          </div>
+        </a>
       </div>
     );
   }
