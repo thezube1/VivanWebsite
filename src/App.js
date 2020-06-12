@@ -2,6 +2,8 @@ import React from "react";
 import NameIntro from "./components/nameintro";
 import LatestArticle from "./components/latestarticle";
 import AboutSection from "./components/aboutsection";
+import ArticleSpread from "./components/articlespread";
+
 import "./App.css";
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, 430px)",
-        gridTemplateRows: "700px 700px 700px",
+        gridTemplateRows: "700px 600px 400px 400px 400px",
         gridColumnGap: 200,
       }}
     >
@@ -23,6 +25,9 @@ function App() {
       </div>
       <div id="aboutSection">
         <AboutSection />
+      </div>
+      <div>
+        <ArticleSpread />
       </div>
     </div>
   );

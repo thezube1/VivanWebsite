@@ -1,6 +1,41 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
 
+const lineExtend = {
+  rest: {
+    width: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+  hover: {
+    width: 120,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+const textHighlight = {
+  rest: {
+    transition: {
+      duration: 1,
+    },
+  },
+  hover: {
+    backgroundImage:
+      "linear-gradient(to right, rgba(252, 186, 3, .65) 100%, white 0%)",
+    transition: {
+      duration: 1,
+    },
+  },
+  leave: {
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 class LatestArticle extends Component {
   render() {
     return (
@@ -36,7 +71,7 @@ class LatestArticle extends Component {
             latest
           </div>
         </div>
-        <a
+        <motion.a
           href="https://www.livemint.com/news/india/hope-and-anxiety-among-liberalization-s-children-11577803916064.html"
           target="_blank"
           style={{
@@ -44,8 +79,12 @@ class LatestArticle extends Component {
             gridArea: "latestTopic",
             color: "black",
           }}
+          initial="rest"
+          whileHover="hover"
+          animate="rest"
         >
           <motion.span
+            variants={textHighlight}
             style={{
               fontFamily: "Unna",
               fontWeight: "bold",
@@ -53,20 +92,25 @@ class LatestArticle extends Component {
               position: "relative",
               bottom: 40,
             }}
-            whileHover={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(252, 186, 3, .65) 100%, white 0%)",
-            }}
-            transition={{ duration: 0.5 }}
           >
             The secret behind <br /> millennial support
             <br />
             for India's Modi
+            <motion.div
+              variants={lineExtend}
+              style={{
+                position: "relative",
+                backgroundColor: "black",
+                width: 0,
+                height: 1.2,
+                top: 10,
+              }}
+            ></motion.div>
           </motion.span>
           <div
             style={{
               display: "grid",
-              gridAutoColumns: "470px",
+              gridAutoColumns: "inherit",
               gridColumn: "main1",
               fontFamily: "Roboto, sans-serif",
               fontWeight: 100,
@@ -81,7 +125,7 @@ class LatestArticle extends Component {
             Voluptatem, eius laborum ea amet dolore voluptatum fuga corrupti
             error.
           </div>
-        </a>
+        </motion.a>
       </div>
     );
   }

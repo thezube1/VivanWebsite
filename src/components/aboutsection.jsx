@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { motion } from "framer-motion";
 
 class AboutSection extends Component {
   state = {};
@@ -23,7 +22,7 @@ class AboutSection extends Component {
             gridArea: "desc",
           }}
         >
-          <motion.div
+          <div
             style={{
               fontSize: 30,
               fontFamily: "Unna",
@@ -34,7 +33,7 @@ class AboutSection extends Component {
             }}
           >
             About
-          </motion.div>
+          </div>
         </div>
         <div
           style={{
@@ -46,6 +45,15 @@ class AboutSection extends Component {
             lineHeight: 1.36,
           }}
         >
+          <div
+            style={{
+              position: "relative",
+              backgroundColor: "black",
+              width: 150,
+              height: 1.2,
+              bottom: 15,
+            }}
+          ></div>
           My name is Vivan Marwaha and I am an independent policy consultant
           based in New Delhi, India. <pre />I have spent the last two years
           interviewing more than 800 millennials, educators, business leaders,
@@ -59,6 +67,15 @@ class AboutSection extends Component {
           India have been left out of the political and social discourse, and I
           hope to change and challenge that with my writing and research. My
           book will be published in May 2020 by Penguin Random House.
+          <div
+            style={{
+              position: "relative",
+              backgroundColor: "black",
+              width: 150,
+              height: 1.2,
+              top: 17,
+            }}
+          ></div>
         </div>
       </div>
     );

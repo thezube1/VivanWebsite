@@ -48,6 +48,15 @@ class Nameintro extends Component {
             alignSelf: "start",
           }}
         >
+          <div
+            style={{
+              position: "relative",
+              backgroundColor: "black",
+              width: 80,
+              height: "1.2px",
+              bottom: 10,
+            }}
+          ></div>
           Writer, philanthropist,
           <br /> and more. The invisible <br />
           social power of technology. <br />
