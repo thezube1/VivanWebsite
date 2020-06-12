@@ -37,11 +37,15 @@ const textHighlight = {
 };
 
 class ArticleSpread extends Component {
-  state = {};
+  state = {
+    title: this.props.title,
+    desc: this.props.content,
+    link: this.props.link,
+  };
   render() {
     return (
       <motion.a
-        href="https://www.livemint.com/news/india/hope-and-anxiety-among-liberalization-s-children-11577803916064.html"
+        href={this.state.link}
         target="_blank"
         style={{
           textDecoration: "none",
@@ -52,44 +56,40 @@ class ArticleSpread extends Component {
         whileHover="hover"
         animate="rest"
       >
-        <motion.span
-          variants={textHighlight}
-          style={{
-            fontFamily: "Unna",
-            fontWeight: "bold",
-            fontSize: 30,
-            position: "relative",
-            bottom: 40,
-          }}
-        >
-          Why millenials <br /> are eating more <br /> fast food
-          <motion.div
-            variants={lineExtend}
+        <div style={{ width: "250px" }}>
+          <motion.span
+            variants={textHighlight}
             style={{
+              fontFamily: "Unna",
+              fontWeight: "bold",
+              fontSize: 30,
               position: "relative",
-              backgroundColor: "black",
-              width: 0,
-              height: 1.2,
-              top: 10,
             }}
-          ></motion.div>
-        </motion.span>
+          >
+            {this.state.title}
+            <motion.div
+              variants={lineExtend}
+              style={{
+                position: "relative",
+                backgroundColor: "black",
+                width: 0,
+                height: 1.2,
+                top: 10,
+              }}
+            ></motion.div>
+          </motion.span>
+        </div>
         <div
           style={{
-            display: "grid",
+            position: "relative",
+            top: 40,
             gridAutoColumns: "inherit",
-            gridColumn: "main1",
             fontFamily: "Roboto, sans-serif",
             fontWeight: 100,
             lineHeight: 1.36,
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          explicabo quisquam architecto minima, necessitatibus dolores odit quod
-          modi excepturi ducimus suscipit, ullam eaque sunt. Perspiciatis
-          laborum explicabo officia vel laudantium reiciendis dolore, doloribus,
-          dignissimos vero possimus saepe veniam facilis odit. Voluptatem, eius
-          laborum ea amet dolore voluptatum fuga corrupti error.
+          {this.state.desc}
         </div>
       </motion.a>
     );

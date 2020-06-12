@@ -50,7 +50,7 @@ class AboutSection extends Component {
               position: "relative",
               backgroundColor: "black",
               width: 150,
-              height: 1.2,
+              height: 1,
               bottom: 15,
             }}
           ></div>
@@ -71,8 +71,8 @@ class AboutSection extends Component {
             style={{
               position: "relative",
               backgroundColor: "black",
-              width: 150,
-              height: 1.2,
+              width: 400,
+              height: 1,
               top: 17,
             }}
           ></div>
