@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import headshot from "../photos/headshotSmaller.png";
+import headshot from "../photos/headshotBrighter.png";
 
 class Nameintro extends Component {
   state = {};
