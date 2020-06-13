@@ -1,7 +1,7 @@
 #wrapper {
   justify-content: center;
   grid-template-columns: repeat(2, 430px);
-  grid-template-rows: 620px 480px 400px 500px;
+  grid-template-rows: 620px 500px 400px 500px;
 }
 
 #aboutSection {
