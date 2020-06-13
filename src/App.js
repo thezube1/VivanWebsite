@@ -3,6 +3,7 @@ import NameIntro from "./components/nameintro";
 import LatestArticle from "./components/latestarticle";
 import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
+import HamburgerNav from "./components/hamburgernav";
 import "./App.css";
 
 class App extends Component {
@@ -44,34 +45,37 @@ class App extends Component {
   };
   render() {
     return (
-      <div
-        id="wrapper"
-        style={{
-          display: "grid",
-          gridColumnGap: 200,
-        }}
-      >
-        <div>
-          <NameIntro />
+      <div>
+        <HamburgerNav />
+        <div
+          id="wrapper"
+          style={{
+            display: "grid",
+            gridColumnGap: 200,
+          }}
+        >
+          <div>
+            <NameIntro />
+          </div>
+          <div>
+            <LatestArticle />
+          </div>
+          <div id="aboutSection">
+            <AboutSection />
+          </div>
+          <React.Fragment>
+            {this.state.content.map((counter) => (
+              <div>
+                <ArticleSpread
+                  key={counter.id}
+                  title={counter.title}
+                  content={counter.summary}
+                  link={counter.link}
+                />
+              </div>
+            ))}
+          </React.Fragment>
         </div>
-        <div>
-          <LatestArticle />
-        </div>
-        <div id="aboutSection">
-          <AboutSection />
-        </div>
-        <React.Fragment>
-          {this.state.content.map((counter) => (
-            <div>
-              <ArticleSpread
-                key={counter.id}
-                title={counter.title}
-                content={counter.summary}
-                link={counter.link}
-              />
-            </div>
-          ))}
-        </React.Fragment>
       </div>
     );
   }
