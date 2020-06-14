@@ -63,7 +63,7 @@ class Nameintro extends Component {
         </div>
         <img
           src={headshot}
-          alt="Image of vivan"
+          alt="Vivan"
           style={{
             position: "relative",
             right: 120,

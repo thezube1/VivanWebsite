@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class NavMenu extends Component {
   state = {};
@@ -12,23 +13,79 @@ class NavMenu extends Component {
     return (
       <div
         id="flyoutMenu"
-        onMouseDown={this.props.handleMouseDown}
         className={visibility}
         style={{
-          backgroundColor: "rgba(252, 186, 3, .8)",
+          backgroundColor: "rgb(255, 203, 105)",
           position: "fixed",
           right: 0,
           zIndex: 1,
-          display: "grid",
-          justifyContent: "center",
-          alignContent: "center",
-          gridRowGap: 20,
         }}
       >
-        <div style={{}}>Home</div>
-        <div>About</div>
-        <div>Articles</div>
-        <div>Mailing list</div>
+        <div
+          style={{
+            marginTop: 150,
+            marginRight: 40,
+            display: "grid",
+            justifyContent: "center",
+            gridGap: 70,
+            fontSize: 40,
+            fontFamily: "Unna",
+            fontWeight: "bold",
+          }}
+        >
+          <div>
+            <Link
+              to="/"
+              style={{
+                padding: 10,
+                outline: "1px solid",
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              Home
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/about"
+              style={{
+                padding: 10,
+                outline: "1px solid",
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              About
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/articles"
+              style={{
+                padding: 10,
+                outline: "1px solid",
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              Articles
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/newsletter"
+              style={{
+                padding: 10,
+                outline: "1px solid",
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              Mailing list
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }

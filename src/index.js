@@ -3,12 +3,22 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//pages import
+import AboutPage from "./pages/about";
+import Newsletter from "./pages/newsletter";
+import AllArticles from "./pages/articles";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <Router>
+    <Switch>
+      <Route path="/about" component={AboutPage} />
+      <Route path="/newsletter" component={Newsletter} />
+      <Route path="/articles" component={AllArticles} />
+      <App />
+    </Switch>
+  </Router>,
   document.getElementById("root")
 );
 
