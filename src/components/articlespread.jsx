@@ -49,7 +49,6 @@ class ArticleSpread extends Component {
         target="_blank"
         style={{
           textDecoration: "none",
-          gridArea: "latestTopic",
           color: "black",
         }}
         initial="rest"

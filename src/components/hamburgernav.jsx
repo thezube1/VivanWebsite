@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import { Link, Router } from "react-router-dom";
+import { Link, BrowserRouter as Router } from "react-router-dom";
+
+const hovered = {
+  rest: { scale: 1, margin: 4, rotate: 0 },
+  tap: { rotate: 180, transition: { duration: 0.1 } },
+  hover: {
+    scale: 1.5,
+    margin: 10,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 
 class HamburgerNav extends Component {
   state = {};
@@ -8,32 +20,48 @@ class HamburgerNav extends Component {
     return (
       <motion.a
         href="#"
+        onMouseDown={this.props.handleMouseDown}
         style={{
-          color: "black",
-          textDecoration: "none",
-          position: "relative",
+          flexDirection: "row",
+          position: "fixed",
+          right: 20,
           top: 20,
+          background: "none",
+          border: "none",
+          zIndex: 2,
         }}
+        initial="rest"
+        whileHover="hover"
+        whileTap="tap"
+        animate="rest"
       >
-        <div style={{ height: 4, width: 28, backgroundColor: "black" }}></div>
-        <div
-          style={{
-            height: 4,
-            width: 28,
-            backgroundColor: "black",
-            position: "relative",
-            top: 10,
-          }}
-        ></div>
-        <div
-          style={{
-            height: 4,
-            width: 28,
-            backgroundColor: "black",
-            position: "relative",
-            bottom: 1,
-          }}
-        ></div>
+        <div>
+          <motion.div
+            style={{
+              height: 4,
+              width: 28,
+              backgroundColor: "black",
+            }}
+            variants={hovered}
+          ></motion.div>
+          <motion.div
+            style={{
+              height: 4,
+              backgroundColor: "black",
+              width: 28,
+            }}
+            variants={hovered}
+          ></motion.div>
+          <motion.div
+            style={{
+              height: 4,
+              width: 28,
+
+              backgroundColor: "black",
+            }}
+            variants={hovered}
+          ></motion.div>
+        </div>
       </motion.a>
     );
   }

@@ -3,8 +3,10 @@ import NameIntro from "./components/nameintro";
 import LatestArticle from "./components/latestarticle";
 import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
-import HamburgerNav from "./components/hamburgernav";
+import NavComplete from "./components/navcomplete";
 import "./App.css";
+import { Switch } from "react-router-dom";
+import HamburgerNav from "./components/hamburgernav";
 
 class App extends Component {
   state = {
@@ -46,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HamburgerNav />
+        <NavComplete />
         <div
           id="wrapper"
           style={{

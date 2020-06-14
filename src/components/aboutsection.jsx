@@ -7,7 +7,7 @@ class AboutSection extends Component {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "1fr",
+          gridTemplateColumns: "inherit",
           gridTemplateRows: "100px 80px 1fr",
           gridTemplateAreas: `"." "desc" "main1"`,
         }}
@@ -37,12 +37,12 @@ class AboutSection extends Component {
         </div>
         <div
           style={{
-            display: "grid",
             gridAutoColumns: "inherit",
             gridArea: "main1",
             fontFamily: "Roboto, sans-serif",
             fontWeight: 100,
             lineHeight: 1.36,
+            minWidth: 0,
           }}
         >
           <div
@@ -71,7 +71,8 @@ class AboutSection extends Component {
             style={{
               position: "relative",
               backgroundColor: "black",
-              width: 400,
+              maxWidth: 400,
+              width: "100%",
               height: 1,
               top: 17,
             }}
