@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import { Link, BrowserRouter as Router } from "react-router-dom";
 
 const hovered = {
   rest: { scale: 1, margin: 4, rotate: 0 },

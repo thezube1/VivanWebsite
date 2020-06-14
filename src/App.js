@@ -5,12 +5,6 @@ import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
 import NavComplete from "./components/navcomplete";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-//pages import
-import AboutPage from "./pages/about";
-import Newsletter from "./pages/newsletter";
-import AllArticles from "./pages/articles";
 
 class App extends Component {
   state = {
@@ -49,6 +43,7 @@ class App extends Component {
       },
     ],
   };
+
   render() {
     return (
       <div>
