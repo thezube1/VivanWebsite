@@ -19,14 +19,14 @@ class AboutPage extends Component {
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(100px, 500px))",
             justifyContent: "center",
-            marginTop: 40,
-            gridGap: 30,
+            marginTop: 150,
+            gridGap: 90,
           }}
         >
           <div>
             <AboutTitle />
           </div>
-          <div style={{ marginTop: 60 }} id="aboutpagetext">
+          <div id="aboutpagetext">
             <AboutPageText desc={this.state.desc} />
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import headshot from "../photos/ColorHeadshot.png";
+import SocialsVertical from "./socialsvertical";
 
 class AboutTitle extends Component {
   state = {};
@@ -9,25 +10,11 @@ class AboutTitle extends Component {
         style={{
           display: "grid",
           justifyContent: "center",
+          gridTemplateColumns: "50px 1fr",
         }}
       >
-        <div
-          style={{
-            height: 200,
-            width: "auto",
-            backgroundColor: "rgb(255, 203, 105)",
-            fontFamily: "Unna",
-            fontSize: 70,
-            fontWeight: "bold",
-            display: "grid",
-            alignContent: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div style={{}}>
-            <div style={{ alignContent: "center" }}>Vivan</div>
-            <div style={{ alignContent: "center" }}>Marwaha</div>
-          </div>
+        <div style={{ gridColumn: "1/2" }}>
+          <SocialsVertical />
         </div>
         <img
           src={headshot}
@@ -35,6 +22,7 @@ class AboutTitle extends Component {
           style={{
             maxWidth: "100%",
             width: "auto",
+            gridColumn: "2/3",
           }}
         />
       </div>
