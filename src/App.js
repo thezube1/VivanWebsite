@@ -4,6 +4,7 @@ import LatestArticle from "./components/latestarticle";
 import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
 import NavComplete from "./components/navcomplete";
+import "./data/spreadscontent.json";
 import "./App.css";
 
 class App extends Component {
