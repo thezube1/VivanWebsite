@@ -68,7 +68,7 @@ class LatestArticle extends Component {
               left: "150%",
             }}
           >
-            latest
+            featured
           </div>
         </div>
         <motion.a

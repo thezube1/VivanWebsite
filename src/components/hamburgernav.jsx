@@ -28,6 +28,7 @@ class HamburgerNav extends Component {
           background: "none",
           border: "none",
           zIndex: 2,
+          outline: "none",
         }}
         initial="rest"
         whileHover="hover"
