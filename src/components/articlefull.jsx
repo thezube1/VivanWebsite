@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
-import ArticleFull from "../components/articlefull";
 
-class Newsletter extends Component {
+class ArticleFull extends Component {
   state = {};
   render() {
     return (
       <div>
-        <ArticleFull />
+        <NavComplete />
+        <div>Full Article</div>
       </div>
     );
   }
 }
 
-export default Newsletter;
+export default ArticleFull;
