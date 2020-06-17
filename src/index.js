@@ -4,11 +4,29 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Data from "./data/allarticles.json";
 
 //pages import
 import AboutPage from "./pages/about";
 import Newsletter from "./pages/newsletter";
 import AllArticles from "./pages/articles";
+import ArticleFull from "./components/articlefull";
+
+let routes = [];
+
+for (let i = 0; i < Data.content.length; i++) {
+  routes.push(
+    <Route
+      path={Data.content[i].route}
+      render={(props) => (
+        <ArticleFull
+          title={Data.content[i].title}
+          description={Data.content[i].summary}
+        />
+      )}
+    />
+  );
+}
 
 ReactDOM.render(
   <Router>
@@ -16,6 +34,7 @@ ReactDOM.render(
       <Route path="/about" component={AboutPage} />
       <Route path="/newsletter" component={Newsletter} />
       <Route path="/articles" component={AllArticles} />
+      {routes}
       <App />
     </Switch>
   </Router>,

@@ -38,6 +38,7 @@ class App extends Component {
                   title={counter.title}
                   content={counter.summary}
                   link={counter.link}
+                  route={counter.route}
                 />
               </div>
             ))}
