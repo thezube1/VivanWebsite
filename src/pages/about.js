@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
 import AboutTitle from "../components/abouttitle";
 import AboutPageText from "../components/aboutpagetext";
+import CreditTab from "../components/credit";
 import Data from "../data/aboutpagecontent.json";
 
 class AboutPage extends Component {
@@ -25,6 +26,15 @@ class AboutPage extends Component {
           <div id="aboutpagetext">
             <AboutPageText desc={Data.content} />
           </div>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            bottom: -20,
+            justifyContent: "center",
+          }}
+        >
+          <CreditTab />
         </div>
       </div>
     );

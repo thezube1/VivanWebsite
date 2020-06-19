@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
 import Data from "../data/newsletterpagecontent.json";
+import CreditTab from "../components/credit";
 
 class Newsletter extends Component {
   state = {};
@@ -67,6 +68,14 @@ class Newsletter extends Component {
               </div>
             </a>
           </div>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            bottom: -20,
+          }}
+        >
+          <CreditTab />
         </div>
       </div>
     );

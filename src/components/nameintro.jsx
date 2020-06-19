@@ -11,7 +11,7 @@ class Nameintro extends Component {
         style={{
           display: "grid",
           gridTemplateColumns: "300 300",
-          gridTemplateRows: "100px 140px 63px 650px",
+          gridTemplateRows: "0px 140px 63px 650px",
           gridTemplateAreas: ` ". ."
                                "text1 text1" 
                                "text2 text2"
@@ -46,7 +46,7 @@ class Nameintro extends Component {
             fontStyle: "italic",
             fontSize: 18,
             gridArea: "text3",
-            top: 100,
+            marginTop: 100,
             alignSelf: "start",
             width: 200,
           }}
@@ -66,9 +66,10 @@ class Nameintro extends Component {
           src={headshot}
           alt="Vivan"
           style={{
+            marginTop: 20,
+            right: 50,
             position: "relative",
-            right: 120,
-            width: "219%",
+            width: "140%",
             gridArea: "image1",
           }}
         />

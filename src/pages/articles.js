@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
 import Data from "../data/allarticles.json";
 import ArticleSpread from "../components/articlespread";
+import CreditTab from "../components/credit";
 
 class AllArticles extends Component {
   state = {};
@@ -35,6 +36,7 @@ class AllArticles extends Component {
               >
                 <div
                   style={{
+                    marginLeft: 40,
                     fontFamily: "Unna",
                     fontSize: 100,
                     fontWeight: "bold",

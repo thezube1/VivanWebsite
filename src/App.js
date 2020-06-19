@@ -5,6 +5,7 @@ import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
 import NavComplete from "./components/navcomplete";
 import Data from "./data/mainpagecontent.json";
+import CreditTab from "./components/credit";
 import "./App.css";
 
 class App extends Component {
@@ -21,7 +22,7 @@ class App extends Component {
             gridColumnGap: 200,
           }}
         >
-          <div>
+          <div id="name">
             <NameIntro summary={Data.nametext.summary} />
           </div>
           <div>
@@ -48,6 +49,7 @@ class App extends Component {
               </div>
             ))}
           </React.Fragment>
+          <CreditTab />
         </div>
       </div>
     );
