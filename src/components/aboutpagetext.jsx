@@ -6,7 +6,6 @@ class AboutPageText extends Component {
   };
   render() {
     let textSplit = this.state.description.split("\n");
-    console.log(textSplit);
     return (
       <div>
         <div style={{ height: 1, width: 150, backgroundColor: "black" }}></div>

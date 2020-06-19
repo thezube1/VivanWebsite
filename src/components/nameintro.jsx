@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import headshot from "../photos/headshotBrighter.png";
 
 class Nameintro extends Component {
-  state = {};
+  state = {
+    summary: this.props.summary,
+  };
   render() {
     return (
       <div
@@ -18,20 +20,20 @@ class Nameintro extends Component {
         id="nameIntro"
       >
         <div
+          id="first"
           style={{
             fontFamily: "Unna",
             fontStyle: "italic",
-            fontSize: 187,
             gridArea: "text1",
           }}
         >
-          vivan &nbsp;
+          vivan
         </div>
         <div
+          id="last"
           style={{
             fontFamily: "Unna",
             fontWeight: "bold",
-            fontSize: 110,
             gridArea: "text2",
           }}
         >
@@ -46,6 +48,7 @@ class Nameintro extends Component {
             gridArea: "text3",
             top: 100,
             alignSelf: "start",
+            width: 200,
           }}
         >
           <div
@@ -57,9 +60,7 @@ class Nameintro extends Component {
               bottom: 10,
             }}
           ></div>
-          Writer, philanthropist,
-          <br /> and more. The invisible <br />
-          social power of technology. <br />
+          {this.props.summary}
         </div>
         <img
           src={headshot}
@@ -67,7 +68,7 @@ class Nameintro extends Component {
           style={{
             position: "relative",
             right: 120,
-            width: "170%",
+            width: "219%",
             gridArea: "image1",
           }}
         />

@@ -1,32 +1,44 @@
 {
   "content": [
     {
-      "id": 1,
+      "id": "hopes",
       "title": "Hope and Anxiety Among Liberalization’s Children",
       "summary": "In my field work across small-town India, one of the most glaring things that stands out to me is the high rate of unemployment. As I traveled to town after town during the 2018 Madhya Pradesh state elections, one sight had become eerily familiar to me: hordes of young and middle-aged people, mostly men, spending their time at public squares, seemingly unemployed and disengaged from economic activity.",
       "link": "https://whatmillennialswant.blog/2020/01/02/hope-and-anxiety-among-liberalizations-children/",
-      "route": "/hope-and-anxiety-among-liberalizations-children"
+      "route": "/hope-and-anxiety-among-liberalizations-children",
+      "author": "Vivan Marwaha",
+      "date": "November 19, 2020"
     },
     {
-      "id": 2,
+      "id": "books2019",
       "title": "Books I read in 2019",
       "summary": "I began the year with Ruchir Sharma’s Democracy on the Road, an incredible diary of his observations from covering nearly three decades of political campaigns in India. Sagarika Ghose’s Why I am a Liberal was another excellent book on liberalism and its history in India. In what seems like an illiberal time, Ghose reminds the reader of liberalism’s rich tradition in India’s founding.",
       "link": "https://whatmillennialswant.blog/2019/12/31/books-i-read-in-2019/",
-      "route": "/books-I-read-in-2019"
+      "route": "/books-I-read-in-2019",
+      "author": "Vivan Marwaha",
+      "date": "November 19, 2020",
+      "img": "https://whatmillennialswantsite.files.wordpress.com/2019/12/img_0940.jpg?w=950",
+      "alt": "Books Vivan read",
+      "full": "On the last day of 2019, I want to share some of the books I read this year. \nI began the year with Ruchir Sharma’s Democracy on the Road, an incredible diary of his observations from covering nearly three decades of political campaigns in India. Sagarika Ghose’s Why I am a Liberal was another excellent book on liberalism and its history in India. In what seems like an illiberal time, Ghose reminds the reader of liberalism’s rich tradition in India’s founding. \nI had the pleasure of meeting Salman Soz when I was invited to a television panel on the Indian economy hosted by Barkha Dutt in April. I found out he’d be on the panel two days before we were set to record, and my editor at Penguin graciously sent a copy of his superb book for me to get up to speed on India’s recent economic slowdown. \nI also met Gurmehar Kaur on another panel hosted by Dutt, this time on young voters in the general election. I went back home, and immediately read her memoir, Small Acts of Freedom, a book increasingly relevant as the public dialogue continues to descend into militarism and hyper-nationalism. \nIn February 2018, I requested a meeting with Professor Sanjay Kumar, Director of the Center for the Study of Developing Societies, and one of India’s foremost psephologists, as I had just begun my book project on Indian millennials. Professor Kumar graciously took two hours out of his schedule to talk to me, and gave me access to his Lokniti-KAF dataset on the attitudes and aspirations of Indian youth. This August, he invited me to speak at the launch of his book, Youth in India, an excellent data-driven analysis of how India’s millennials think and behave. \nBut I enjoyed one book the most — Kapil Komireddi’s Malevolent Republic, which gave me great company on my trip to the United States in September. A searing history of ‘New India,’ Komireddi spares no one as he documents the events and people which have brought India to where it is today. \nNeyaz Farooquee’s memoir, An Ordinary Man’s Guide to Radicalism, was recommended to me by my agent, Shruti Debi. It is a great window into the lives of young Muslims in India today. Similarly, Yashica Dutt’s Coming out as Dalit is a must-read book on growing up Dalit in India, and how although we may like to believe caste ‘doesn’t exist’ in urban India, it in fact, thrives. \nFinally, I ended 2019 with my the last field research trip for my book in Kerala, where Manu S Pillai is somewhat of a household name. Manu had helped me plan my trip to his state and introduced me to invaluable experts on Kerala’s history and society, and after hearing his name everywhere, I knew I couldn’t delay reading his debut book, The Ivory Throne any longer. Although I still have half of the book left, it is a fascinating account of the Travancore royal family and how it navigated colonialism and the independence movement. I have set limits on how much I can read every week, partly because I need that time to complete my own book, but mostly because I’m scared I will regret reading it too fast. \nI wish everyone reading this a happy new year! As always, please reach out to me with any questions, comments, or book suggestions."
     },
     {
-      "id": 3,
+      "id": "demographyofprotests",
       "title": "Demography of a Protest",
       "summary": "As protests against the Narendra Modi government’s recently passed Citizenship (Amendment) Act (CAA) continue to intensify in cities across India, one of the most notable and unique features of the demonstrations has been the demographics of those protesting.",
       "link": "https://whatmillennialswant.blog/2019/12/28/demography-of-a-protest/",
-      "route": "/demography-of-a-protest"
+      "route": "/demography-of-a-protest",
+      "author": "Vivan Marwaha",
+      "date": "November 19, 2020",
+      "full": "Wassup"
     },
     {
-      "id": 4,
+      "id": "millenialsformodi",
       "title": "The secret behind millennial support for Prime Minister Modi",
       "summary": "As the dust settles on India’s general elections, one thing has become clear: Despite a record-high unemployment rate, a slowing economy and widespread agrarian distress, Indians have overwhelmingly decided to give Prime Minister Narendra Modi and his Bharatiya Janata Party a second chance to put the country back on track.",
       "link": "https://whatmillennialswant.blog/2019/05/30/the-secret-behind-millennial-support-for-prime-minister-modi/",
-      "route": "/the-secret-behind-millennial-support-for-prime-minister-modi"
+      "route": "/the-secret-behind-millennial-support-for-prime-minister-modi",
+      "author": "Vivan Marwaha",
+      "date": "November 19, 2020"
     }
   ]
 }

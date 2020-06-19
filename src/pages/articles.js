@@ -47,14 +47,16 @@ class AllArticles extends Component {
               </div>
             </div>
             <React.Fragment>
-              {Data.content.map((counter) => (
-                <div>
+              {Data.content.map((content) => (
+                <div key={content.id}>
                   <ArticleSpread
-                    key={counter.id}
-                    title={counter.title}
-                    content={counter.summary}
-                    link={counter.link}
-                    route={counter.route}
+                    key={content.id}
+                    title={content.title}
+                    content={content.summary}
+                    link={content.link}
+                    route={content.route}
+                    author={content.author}
+                    date={content.date}
                   />
                 </div>
               ))}

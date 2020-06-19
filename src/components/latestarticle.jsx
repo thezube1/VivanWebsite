@@ -37,6 +37,11 @@ const textHighlight = {
 };
 
 class LatestArticle extends Component {
+  state = {
+    title: this.props.title,
+    description: this.props.description,
+    link: this.props.link,
+  };
   render() {
     return (
       <div
@@ -72,7 +77,7 @@ class LatestArticle extends Component {
           </div>
         </div>
         <motion.a
-          href="https://www.livemint.com/news/india/hope-and-anxiety-among-liberalization-s-children-11577803916064.html"
+          href={this.state.link}
           target="_blank"
           style={{
             textDecoration: "none",
@@ -93,7 +98,7 @@ class LatestArticle extends Component {
                 position: "relative",
               }}
             >
-              The secret behind millennial support for India's Modi
+              {this.state.title}
               <motion.div
                 variants={lineExtend}
                 style={{
@@ -116,9 +121,7 @@ class LatestArticle extends Component {
               lineHeight: 1.36,
             }}
           >
-            "It is not that young Indians did not have a choice in this
-            election. They had plenty. But in the end, the allure of a decisive
-            leader proved more important than the BJP's economic stumbles"
+            {this.state.description}
           </div>
         </motion.a>
       </div>

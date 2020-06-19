@@ -1,7 +1,15 @@
 #wrapper {
   justify-content: center;
   grid-template-columns: repeat(2, 430px);
-  grid-template-rows: 750px 500px 400px 500px;
+  grid-template-rows: 750px 500px 450px 500px;
+}
+
+#first {
+  font-size: 187px;
+}
+
+#last {
+  font-size: 110px;
 }
 
 #aboutSection {
@@ -21,13 +29,19 @@ html {
 
   #wrapper {
     grid-template-columns: repeat(auto-fit, minmax(100px, 430px));
-    grid-template-rows: 600px 600px 800px 400px 400px 400px;
+    grid-template-rows: 600px 600px 800px 420px 300px 300px;
   }
 }
 
 @media screen and (max-width: 420px) {
   #wrapper {
     grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
+  }
+  #last {
+    font-size: 90px;
+  }
+  #first {
+    font-size: 167px;
   }
 }
 

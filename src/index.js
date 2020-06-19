@@ -17,11 +17,18 @@ let routes = [];
 for (let i = 0; i < Data.content.length; i++) {
   routes.push(
     <Route
+      exact
       path={Data.content[i].route}
+      key={Data.content[i].id}
       render={(props) => (
         <ArticleFull
           title={Data.content[i].title}
-          description={Data.content[i].summary}
+          description={Data.content[i].full}
+          image={Data.content[i].img}
+          date={Data.content[i].date}
+          author={Data.content[i].author}
+          alt={Data.content[i].alt}
+          link={Data.content[i].link}
         />
       )}
     />

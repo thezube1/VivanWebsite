@@ -4,7 +4,7 @@ import LatestArticle from "./components/latestarticle";
 import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
 import NavComplete from "./components/navcomplete";
-import Data from "./data/spreadscontent.json";
+import Data from "./data/mainpagecontent.json";
 import "./App.css";
 
 class App extends Component {
@@ -22,23 +22,28 @@ class App extends Component {
           }}
         >
           <div>
-            <NameIntro />
+            <NameIntro summary={Data.nametext.summary} />
           </div>
           <div>
-            <LatestArticle />
+            <LatestArticle
+              title={Data.featured.title}
+              description={Data.featured.summary}
+              link={Data.featured.link}
+            />
           </div>
           <div id="aboutSection">
-            <AboutSection />
+            <AboutSection summary={Data.about.summary} />
           </div>
           <React.Fragment>
-            {Data.content.map((counter) => (
-              <div>
+            {Data.articles.map((counter) => (
+              <div key={counter.id}>
                 <ArticleSpread
-                  key={counter.id}
                   title={counter.title}
                   content={counter.summary}
                   link={counter.link}
                   route={counter.route}
+                  author={counter.author}
+                  date={counter.date}
                 />
               </div>
             ))}
