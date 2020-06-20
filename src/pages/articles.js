@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
-import Data from "../data/allarticles.json";
 import ArticleSpread from "../components/articlespread";
-import CreditTab from "../components/credit";
 
 class AllArticles extends Component {
-  state = {};
+  state = {
+    Data: { content: [] },
+  };
+
+  componentDidMount = () => {
+    fetch("data/allarticles.json")
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ Data: data });
+      });
+  };
   render() {
     return (
       <div>
@@ -49,7 +57,7 @@ class AllArticles extends Component {
               </div>
             </div>
             <React.Fragment>
-              {Data.content.map((content) => (
+              {this.state.Data.content.map((content) => (
                 <div key={content.id}>
                   <ArticleSpread
                     key={content.id}

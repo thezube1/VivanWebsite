@@ -1,11 +1,61 @@
 import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
-import Data from "../data/newsletterpagecontent.json";
 import CreditTab from "../components/credit";
 
 class Newsletter extends Component {
-  state = {};
+  state = {
+    Data: {
+      content: [],
+    },
+  };
+
+  componentDidMount = () => {
+    fetch("data/newsletterpagecontent.json")
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ Data: data });
+      });
+  };
+
   render() {
+    const desc = this.state.Data.content.map((check) => (
+      <div
+        style={{
+          justifyContent: "center",
+          textAlign: "center",
+          marginTop: 40,
+          fontFamily: "Roboto",
+          fontSize: 20,
+        }}
+        key="desc"
+      >
+        {check.description}
+      </div>
+    ));
+    const link = this.state.Data.content.map((check) => (
+      <a
+        href={check.link}
+        key="link"
+        style={{
+          textDecoration: "none",
+          justifySelf: "center",
+          marginTop: 80,
+        }}
+      >
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "black",
+            color: "white",
+            padding: 20,
+            fontSize: 40,
+            fontFamily: "Roboto",
+          }}
+        >
+          Join here
+        </div>
+      </a>
+    ));
     return (
       <div>
         <NavComplete />
@@ -35,38 +85,8 @@ class Newsletter extends Component {
                 Join my newsletter
               </span>
             </div>
-            <div
-              style={{
-                justifyContent: "center",
-                textAlign: "center",
-                marginTop: 40,
-                fontFamily: "Roboto",
-                fontSize: 20,
-              }}
-            >
-              {Data.description}
-            </div>
-            <a
-              href={Data.link}
-              style={{
-                textDecoration: "none",
-                justifySelf: "center",
-                marginTop: 80,
-              }}
-            >
-              <div
-                style={{
-                  position: "relative",
-                  backgroundColor: "black",
-                  color: "white",
-                  padding: 20,
-                  fontSize: 40,
-                  fontFamily: "Roboto",
-                }}
-              >
-                Join here
-              </div>
-            </a>
+            {desc}
+            {link}
           </div>
         </div>
         <div

@@ -4,14 +4,42 @@ import LatestArticle from "./components/latestarticle";
 import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
 import NavComplete from "./components/navcomplete";
-import Data from "./data/mainpagecontent.json";
 import CreditTab from "./components/credit";
 import "./App.css";
 
 class App extends Component {
-  state = {};
+  state = {
+    Data: {
+      about: [],
+      nametext: [],
+      featured: [],
+      articles: [],
+    },
+  };
+
+  componentDidMount = () => {
+    fetch("data/mainpagecontent.json")
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ Data: data });
+      });
+  };
 
   render() {
+    const aboutsection = this.state.Data.about.map((check) => (
+      <AboutSection summary={check.summary} key={"about"} />
+    ));
+    const latestarticle = this.state.Data.featured.map((check) => (
+      <LatestArticle
+        title={check.title}
+        description={check.summary}
+        link={check.link}
+        key={"article"}
+      />
+    ));
+    const nameintro = this.state.Data.nametext.map((check) => (
+      <NameIntro summary={check.summary} key="name" />
+    ));
     return (
       <div>
         <NavComplete />
@@ -22,21 +50,11 @@ class App extends Component {
             gridColumnGap: 200,
           }}
         >
-          <div id="name">
-            <NameIntro summary={Data.nametext.summary} />
-          </div>
-          <div>
-            <LatestArticle
-              title={Data.featured.title}
-              description={Data.featured.summary}
-              link={Data.featured.link}
-            />
-          </div>
-          <div id="aboutSection">
-            <AboutSection summary={Data.about.summary} />
-          </div>
+          <div id="name">{nameintro}</div>
+          <div>{latestarticle}</div>
+          <div id="aboutSection">{aboutsection}</div>
           <React.Fragment>
-            {Data.articles.map((counter) => (
+            {this.state.Data.articles.map((counter) => (
               <div key={counter.id}>
                 <ArticleSpread
                   title={counter.title}

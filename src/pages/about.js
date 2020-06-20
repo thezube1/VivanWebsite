@@ -2,12 +2,24 @@ import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
 import AboutTitle from "../components/abouttitle";
 import AboutPageText from "../components/aboutpagetext";
-import CreditTab from "../components/credit";
-import Data from "../data/aboutpagecontent.json";
 
 class AboutPage extends Component {
-  state = {};
+  state = {
+    Data: {
+      content: [],
+    },
+  };
+  componentDidMount = () => {
+    fetch("data/aboutpagecontent.json")
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ Data: data });
+      });
+  };
   render() {
+    const abouttext = this.state.Data.content.map((check) => (
+      <AboutPageText desc={check.summary} key="about" />
+    ));
     return (
       <div id="aboutwrapper">
         <NavComplete />
@@ -23,9 +35,7 @@ class AboutPage extends Component {
           <div>
             <AboutTitle />
           </div>
-          <div id="aboutpagetext">
-            <AboutPageText desc={Data.content} />
-          </div>
+          <div id="aboutpagetext">{abouttext}</div>
         </div>
         <div
           style={{
@@ -33,9 +43,7 @@ class AboutPage extends Component {
             bottom: -20,
             justifyContent: "center",
           }}
-        >
-          <CreditTab />
-        </div>
+        ></div>
       </div>
     );
   }
