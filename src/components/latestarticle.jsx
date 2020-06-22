@@ -49,7 +49,6 @@ class LatestArticle extends Component {
         style={{
           display: "grid",
           gridTemplateColumns: "1fr",
-          gridTemplateRows: "1fr 140px 1fr",
           gridTemplateAreas: `"." "desc" "latestTopic"`,
         }}
       >

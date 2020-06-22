@@ -1,7 +1,7 @@
 #wrapper {
   justify-content: center;
   grid-template-columns: repeat(2, 430px);
-  grid-template-rows: 750px 500px 450px 500px;
+  grid-template-rows: 750px 500px min-content min-content;
 }
 
 #name {
@@ -26,6 +26,10 @@ html {
   padding: 0;
 }
 
+#latestArticle {
+  grid-template-rows: 1fr 140px 1fr;
+}
+
 @media screen and (max-width: 1061px) {
   #aboutSection {
     grid-column: 1/2;
@@ -33,14 +37,14 @@ html {
 
   #wrapper {
     grid-template-columns: repeat(auto-fit, minmax(100px, 430px));
-    grid-template-rows: 600px 600px 800px 420px 300px 300px;
+    grid-template-rows: 600px 600px 800px min-content min-content min-content;
   }
 }
 
 @media screen and (max-width: 420px) {
   #wrapper {
     grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
-    grid-template-rows: 400px 600px 800px 420px 300px 300px;
+    grid-template-rows: 330px 550px 800px min-content min-content min-content;
   }
   #last {
     font-size: 80px;
@@ -50,6 +54,9 @@ html {
   }
   #name {
     margin-top: 0px;
+  }
+  #latestArticle {
+    grid-template-rows: 1fr 70px 1fr;
   }
 }
 

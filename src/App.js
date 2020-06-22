@@ -55,7 +55,7 @@ class App extends Component {
           <div id="aboutSection">{aboutsection}</div>
           <React.Fragment>
             {this.state.Data.articles.map((counter) => (
-              <div key={counter.id}>
+              <div key={counter.id} style={{ marginBottom: 40 }}>
                 <ArticleSpread
                   title={counter.title}
                   content={counter.summary}

@@ -30,6 +30,10 @@ class AboutPage extends Component {
             justifyContent: "center",
             marginTop: 150,
             gridGap: 90,
+            maxWidth: "93%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginBottom: 70,
           }}
         >
           <div>

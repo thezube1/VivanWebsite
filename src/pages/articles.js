@@ -26,6 +26,10 @@ class AllArticles extends Component {
               justifyContent: "center",
               gridGap: 100,
               marginTop: 100,
+              width: "90%",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginBottom: 70,
             }}
           >
             <div
@@ -44,7 +48,7 @@ class AllArticles extends Component {
               >
                 <div
                   style={{
-                    marginLeft: 40,
+                    marginLeft: 20,
                     fontFamily: "Unna",
                     fontSize: 100,
                     fontWeight: "bold",
