@@ -4,6 +4,10 @@
   grid-template-rows: 750px 500px min-content min-content;
 }
 
+#aboutWrapper {
+  grid-template-rows: 100px 50px 1fr;
+}
+
 #name {
   margin-top: 100px;
 }
@@ -44,7 +48,7 @@ html {
 @media screen and (max-width: 420px) {
   #wrapper {
     grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
-    grid-template-rows: 330px 550px 800px min-content min-content min-content;
+    grid-template-rows: 330px 480px 800px min-content min-content min-content;
   }
   #last {
     font-size: 80px;
@@ -56,7 +60,10 @@ html {
     margin-top: 0px;
   }
   #latestArticle {
-    grid-template-rows: 1fr 70px 1fr;
+    grid-template-rows: 1fr 50px 1fr;
+  }
+  #aboutWrapper {
+    grid-template-rows: 100px 40px 1fr;
   }
 }
 

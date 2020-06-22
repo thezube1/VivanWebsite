@@ -8,10 +8,10 @@ class AboutSection extends Component {
     let textSplit = this.state.summary.split("\n");
     return (
       <div
+        id="aboutWrapper"
         style={{
           display: "grid",
           gridTemplateColumns: "inherit",
-          gridTemplateRows: "100px 80px 1fr",
           gridTemplateAreas: `"." "desc" "main1"`,
         }}
       >
@@ -44,14 +44,6 @@ class AboutSection extends Component {
             gridArea: "main1",
           }}
         >
-          <div
-            style={{
-              position: "relative",
-              backgroundColor: "black",
-              width: 150,
-              height: 1,
-            }}
-          ></div>
           {textSplit.map((value, index) => {
             return (
               <div
@@ -67,16 +59,6 @@ class AboutSection extends Component {
               </div>
             );
           })}
-          <div
-            style={{
-              position: "relative",
-              backgroundColor: "black",
-              maxWidth: 400,
-              width: "100%",
-              height: 1,
-              top: 17,
-            }}
-          ></div>
         </div>
       </div>
     );
