@@ -53,6 +53,30 @@ class App extends Component {
           <div id="name">{nameintro}</div>
           <div>{latestarticle}</div>
           <div id="aboutSection">{aboutsection}</div>
+          <div
+            style={{
+              height: 20,
+              width: 20,
+              backgroundColor: "black",
+              display: "flex",
+              alignItems: "center",
+            }}
+            id="ArticlesLabel1"
+          >
+            <div
+              style={{
+                fontSize: 30,
+                fontFamily: "Unna",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                position: "relative",
+                left: "150%",
+              }}
+            >
+              Articles
+            </div>
+          </div>
+
           <React.Fragment>
             {this.state.Data.articles.map((counter) => (
               <div key={counter.id} style={{ marginBottom: 40 }}>
