@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import headshot from "../photos/headshotBrighter.png";
+import headshot from "../photos/ColorHeadshot.png";
 
 class Nameintro extends Component {
   state = {
@@ -66,7 +66,7 @@ class Nameintro extends Component {
           src={headshot}
           alt="Vivan"
           style={{
-            marginTop: 20,
+            marginTop: 15,
             right: 50,
             position: "relative",
             width: "140%",

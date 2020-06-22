@@ -13,11 +13,11 @@ class AboutPageText extends Component {
           {textSplit.map((value, index) => {
             return (
               <div
+                id="aboutText2"
                 style={{
                   fontFamily: "Roboto",
                   gridAutoColumns: "inherit",
-                  fontSize: 20,
-                  marginTop: 20,
+                  marginTop: 10,
                   lineHeight: 1.5,
                 }}
                 key={index}

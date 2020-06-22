@@ -24,12 +24,13 @@ class AboutPage extends Component {
       <div id="aboutwrapper">
         <NavComplete />
         <div
+          id="aboutContent"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(100px, 500px))",
             justifyContent: "center",
-            marginTop: 150,
-            gridGap: 90,
+            gridColumnGap: 90,
+            gridRowGap: 30,
             maxWidth: "93%",
             marginLeft: "auto",
             marginRight: "auto",

@@ -38,7 +38,7 @@ class Newsletter extends Component {
         style={{
           textDecoration: "none",
           justifySelf: "center",
-          marginTop: 80,
+          marginTop: 40,
         }}
       >
         <div
@@ -47,7 +47,7 @@ class Newsletter extends Component {
             backgroundColor: "black",
             color: "white",
             padding: 20,
-            fontSize: 40,
+            fontSize: 30,
             fontFamily: "Roboto",
           }}
         >
@@ -76,7 +76,7 @@ class Newsletter extends Component {
               <span
                 style={{
                   fontFamily: "Unna",
-                  fontSize: 70,
+                  fontSize: 60,
                   fontWeight: "bold",
                   backgroundColor: "rgba(252, 186, 3, .65)",
                 }}

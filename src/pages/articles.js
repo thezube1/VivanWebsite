@@ -20,11 +20,12 @@ class AllArticles extends Component {
         <NavComplete />
         <div>
           <div
+            id="articlesWrapper"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(100px, 400px))",
               justifyContent: "center",
-              gridGap: 100,
+              gridGap: 45,
               marginTop: 100,
               width: "90%",
               marginLeft: "auto",
