@@ -17,7 +17,7 @@ class Newsletter extends Component {
   };
 
   render() {
-    const desc = this.state.Data.content.map((check) => (
+    const desc = this.state.Data.content.map((check, index) => (
       <div
         style={{
           justifyContent: "center",
@@ -26,20 +26,22 @@ class Newsletter extends Component {
           fontFamily: "Roboto",
           fontSize: 20,
         }}
-        key="desc"
+        key={index}
       >
         {check.description}
       </div>
     ));
-    const link = this.state.Data.content.map((check) => (
+    const link = this.state.Data.content.map((check, index) => (
       <a
         href={check.link}
-        key="link"
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
           textDecoration: "none",
           justifySelf: "center",
           marginTop: 40,
         }}
+        key={index}
       >
         <div
           style={{

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./components/scrolltotop";
 
 //pages import
 import AboutPage from "./pages/about";
@@ -52,7 +53,9 @@ fetchJSONFile("data/allarticles.json", function (data) {
 
 ReactDOM.render(
   <Router>
+    <ScrollToTop />
     <Switch>
+      <Route exact path="/" component={App} />
       <Route path="/about" component={AboutPage} />
       <Route path="/newsletter" component={Newsletter} />
       <Route path="/articles" component={AllArticles} />

@@ -17,8 +17,7 @@ class HamburgerNav extends Component {
   state = {};
   render() {
     return (
-      <motion.a
-        href="#"
+      <motion.div
         onMouseDown={this.props.handleMouseDown}
         style={{
           flexDirection: "row",
@@ -29,6 +28,7 @@ class HamburgerNav extends Component {
           border: "none",
           zIndex: 2,
           outline: "none",
+          cursor: "pointer",
         }}
         initial="rest"
         whileHover="hover"
@@ -62,7 +62,7 @@ class HamburgerNav extends Component {
             variants={hovered}
           ></motion.div>
         </div>
-      </motion.a>
+      </motion.div>
     );
   }
 }

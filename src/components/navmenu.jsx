@@ -82,7 +82,7 @@ class NavMenu extends Component {
                 textDecoration: "none",
               }}
             >
-              Mailing list
+              Newsletter
             </Link>
           </div>
         </div>

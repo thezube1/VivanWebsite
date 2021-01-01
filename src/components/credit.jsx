@@ -5,7 +5,15 @@ class CreditTab extends Component {
   render() {
     return (
       <div>
-        <div>Website developed by Zubin Hydrie</div>
+        <div
+          style={{
+            fontFamily: "Unna",
+            fontWeight: 900,
+            marginBottom: 50,
+          }}
+        >
+          Website developed by Zubin Hydrie
+        </div>
       </div>
     );
   }

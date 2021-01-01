@@ -1,13 +1,13 @@
 {
   "nametext": [
     {
-      "summary": "Writer, philanthropist, and more. The invisible social power of technology."
+      "summary": "Writer, Thinker, Entrepreneur"
     }
   ],
 
   "featured": [
     {
-      "title": "The secret behind millennial support for India's Modi",
+      "title": "The secret behind millennial support for India’s Modi",
       "summary": "It is not that young Indians do not have a choice in this election. They had plenty. But in the end, the allure of a decisive leader proved more important than the BJP's economic stumbles",
       "link": "https://www.livemint.com/news/india/hope-and-anxiety-among-liberalization-s-children-11577803916064.html"
     }
@@ -15,7 +15,7 @@
 
   "about": [
     {
-      "summary": "My name is Vivan Marwaha and I am an independent policy consultant based in New Delhi, India. \nI have spent the last two years interviewing more than 800 millennials, educators, business leaders, and policymakers for my book on the economic aspirations, social views, and political attitudes of Indian millennials. \nThrough my extensive field research, which included traveling across more than 30,000 kilometers in 13 Indian states, I narrate an intimate and data-driven biography of India’s most dynamic generation. I have contributed op-eds to The Washington Post, The Times of India, Mint, Firstpost, and The Print. \nI truly believe that young people in India have been left out of the political and social discourse, and I hope to change and challenge that with my writing and research. My book will be published in May 2020 by Penguin Random House."
+      "summary": "I am the author of the forthcoming book, What Millennials Want (Penguin Random House), an intimate biography of Indian millennials, the world’s single-largest demographic group. \nI traveled more than 30,000 kilometers across 13 Indian states to interview more than 900 millennials, educators, business leaders, and policymakers to investigate the economic aspirations, social views, and political attitudes of young India. \nI have contributed op-eds to The Washington Post, The Times of India, Mint, Firstpost, and The Print, and have been featured in the Financial Times and The Guardian. \nI truly believe that young people in India have been left out of the political and social discourse, and I hope to change and challenge that with my writing and research. My book will be published in 2021."
     }
   ],
 
@@ -30,31 +30,31 @@
       "date": "November 19, 2020"
     },
     {
-      "id": "books2019",
-      "title": "Books I read in 2019",
-      "summary": "I began the year with Ruchir Sharma’s Democracy on the Road, an incredible diary of his observations from covering nearly three decades of political campaigns in India. Sagarika Ghose’s Why I am a Liberal was another excellent book on liberalism and its history in India. In what seems like an illiberal time, Ghose reminds the reader of liberalism’s rich tradition in India’s founding.",
-      "link": "https://whatmillennialswant.blog/2019/12/31/books-i-read-in-2019/",
-      "route": "/books-I-read-in-2019",
+      "id": "indiantechnicaleducation",
+      "title": "Indian technical education needs wholesale reform",
+      "summary": "Last month, as part of my research for my book on Indian millennials, I visited and spent a few days at the Infosys headquarters in Bangalore and the company’s 330-acre campus in Mysore. I was there to...",
+      "link": "https://static.theprint.in/wp-content/uploads/2018/07/GettyImages-689961136-e1532698919417-696x436.jpg",
+      "route": "/indian-technical-education-needs-wholesale-reform",
       "author": "Vivan Marwaha",
-      "date": "November 19, 2020"
+      "date": "September 17, 2018"
     },
     {
-      "id": "demographyofprotests",
-      "title": "Demography of a Protest",
-      "summary": "As protests against the Narendra Modi government’s recently passed Citizenship (Amendment) Act (CAA) continue to intensify in cities across India, one of the most notable and unique features of the demonstrations has been the demographics of those protesting.",
+      "id": "allaboutmodipersonality",
+      "title": "For Indian millennials, 2019 is going to be all about Modi’s personality not policy",
+      "summary": "Four years after Narendra Modi stormed the hustings with unprecedented support from first-time voters, there is much speculation about whether he has sustained his charm among the youth ahead of the upcoming 2019 general election.",
       "link": "https://whatmillennialswant.blog/2019/12/28/demography-of-a-protest/",
-      "route": "/demography-of-a-protest",
+      "route": "/2019-is-all-about-modi's-personality",
       "author": "Vivan Marwaha",
-      "date": "November 19, 2020"
+      "date": "July 18, 2018"
     },
     {
       "id": "millenialsformodi",
       "title": "The secret behind millennial support for Prime Minister Modi",
       "summary": "As the dust settles on India’s general elections, one thing has become clear: Despite a record-high unemployment rate, a slowing economy and widespread agrarian distress, Indians have overwhelmingly decided to give Prime Minister Narendra Modi and his Bharatiya Janata Party a second chance to put the country back on track.",
       "link": "https://whatmillennialswant.blog/2019/05/30/the-secret-behind-millennial-support-for-prime-minister-modi/",
-      "route": "/the-secret-behind-millennial-support-for-prime-minister-modi",
+      "route": "/the-secret-behind-millennial-support-for-india's-modi",
       "author": "Vivan Marwaha",
-      "date": "November 19, 2020"
+      "date": "May 24, 2019"
     }
   ]
 }
