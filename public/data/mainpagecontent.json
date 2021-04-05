@@ -7,19 +7,28 @@
 
   "featured": [
     {
-      "title": "The secret behind millennial support for India’s Modi",
-      "summary": "It is not that young Indians do not have a choice in this election. They had plenty. But in the end, the allure of a decisive leader proved more important than the BJP's economic stumbles",
-      "link": "https://www.livemint.com/news/india/hope-and-anxiety-among-liberalization-s-children-11577803916064.html"
+      "title": "India’s millennials have been hit hard by the Covid recession",
+      "summary": "An unemployment crisis is crushing the country’s growth. Last August, Indore, a bustling city of two million people in India’s Madhya Pradesh state, earned the title of the country’s cleanest city for the fourth consecutive year...",
+      "link": "https://www.newstatesman.com/world/asia/2021/03/india-s-millennials-have-been-hit-hard-covid-recession"
     }
   ],
 
   "about": [
     {
-      "summary": "I am the author of the forthcoming book, What Millennials Want (Penguin Random House), an intimate biography of Indian millennials, the world’s single-largest demographic group. \nI traveled more than 30,000 kilometers across 13 Indian states to interview more than 900 millennials, educators, business leaders, and policymakers to investigate the economic aspirations, social views, and political attitudes of young India. \nI have contributed op-eds to The Washington Post, The Times of India, Mint, Firstpost, and The Print, and have been featured in the Financial Times and The Guardian. \nI truly believe that young people in India have been left out of the political and social discourse, and I hope to change and challenge that with my writing and research. My book will be published in 2021."
+      "summary": "I am the author of the forthcoming book, What Millennials Want (Penguin Random House), an intimate biography of Indian millennials, the world’s single-largest demographic group. \nI traveled more than 30,000 kilometers across 13 Indian states to interview more than 900 millennials, educators, business leaders, and policymakers to investigate the economic aspirations, social views, and political attitudes of young India. \nI have contributed op-eds to The Washington Post, New Statesman, The Times of India, Mint, and The Print, and have been featured in the Financial Times and The Guardian. \nI truly believe that young people in India have been left out of the political and social discourse, and I hope to change and challenge that with my writing and research. My book will be published in 2021."
     }
   ],
 
   "articles": [
+    {
+      "id": "hithardbycovid",
+      "title": "India’s millennials have been hit hard by the Covid recession",
+      "summary": "An unemployment crisis is crushing the country’s growth. Last August, Indore, a bustling city of two million people in India’s Madhya Pradesh state, earned the title of the country’s cleanest city for the fourth consecutive year...",
+      "link": "https://www.newstatesman.com/world/asia/2021/03/india-s-millennials-have-been-hit-hard-covid-recession",
+      "route": "/indian-millennials-hit-hard-covid",
+      "author": "Vivan Marwaha",
+      "date": "March 10, 2021"
+    },
     {
       "id": "hopes",
       "title": "Hope and Anxiety Among Liberalization’s Children",
@@ -30,13 +39,13 @@
       "date": "November 19, 2020"
     },
     {
-      "id": "indiantechnicaleducation",
-      "title": "Indian technical education needs wholesale reform",
-      "summary": "Last month, as part of my research for my book on Indian millennials, I visited and spent a few days at the Infosys headquarters in Bangalore and the company’s 330-acre campus in Mysore. I was there to...",
-      "link": "https://static.theprint.in/wp-content/uploads/2018/07/GettyImages-689961136-e1532698919417-696x436.jpg",
-      "route": "/indian-technical-education-needs-wholesale-reform",
+      "id": "millenialsformodi",
+      "title": "The secret behind millennial support for Prime Minister Modi",
+      "summary": "As the dust settles on India’s general elections, one thing has become clear: Despite a record-high unemployment rate, a slowing economy and widespread agrarian distress, Indians have overwhelmingly decided to give Prime Minister Narendra Modi and his Bharatiya Janata Party a second chance to put the country back on track.",
+      "link": "https://whatmillennialswant.blog/2019/05/30/the-secret-behind-millennial-support-for-prime-minister-modi/",
+      "route": "/the-secret-behind-millennial-support-for-india's-modi",
       "author": "Vivan Marwaha",
-      "date": "September 17, 2018"
+      "date": "May 24, 2019"
     },
     {
       "id": "allaboutmodipersonality",
@@ -46,15 +55,6 @@
       "route": "/2019-is-all-about-modi's-personality",
       "author": "Vivan Marwaha",
       "date": "July 18, 2018"
-    },
-    {
-      "id": "millenialsformodi",
-      "title": "The secret behind millennial support for Prime Minister Modi",
-      "summary": "As the dust settles on India’s general elections, one thing has become clear: Despite a record-high unemployment rate, a slowing economy and widespread agrarian distress, Indians have overwhelmingly decided to give Prime Minister Narendra Modi and his Bharatiya Janata Party a second chance to put the country back on track.",
-      "link": "https://whatmillennialswant.blog/2019/05/30/the-secret-behind-millennial-support-for-prime-minister-modi/",
-      "route": "/the-secret-behind-millennial-support-for-india's-modi",
-      "author": "Vivan Marwaha",
-      "date": "May 24, 2019"
     }
   ]
 }
