@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
 
+import { initGA, PageView } from "../components/tracking/index";
+
 class Newsletter extends Component {
   state = {
     Data: {
@@ -9,6 +11,8 @@ class Newsletter extends Component {
   };
 
   componentDidMount = () => {
+    initGA();
+    PageView();
     fetch("data/newsletterpagecontent.json")
       .then((response) => response.json())
       .then((data) => {

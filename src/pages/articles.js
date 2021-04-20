@@ -2,12 +2,16 @@ import React, { Component } from "react";
 import NavComplete from "../components/navcomplete";
 import ArticleSpread from "../components/articlespread";
 
+import { initGA, PageView } from "../components/tracking/index";
+
 class AllArticles extends Component {
   state = {
     Data: { content: [] },
   };
 
   componentDidMount = () => {
+    initGA();
+    PageView();
     fetch("data/allarticles.json")
       .then((response) => response.json())
       .then((data) => {

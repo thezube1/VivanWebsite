@@ -7,6 +7,8 @@ import NavComplete from "./components/navcomplete";
 import CreditTab from "./components/credit";
 import "./App.css";
 
+import { initGA, PageView } from "./components/tracking/index";
+
 class App extends Component {
   state = {
     Data: {
@@ -18,6 +20,8 @@ class App extends Component {
   };
 
   componentDidMount = () => {
+    initGA();
+    PageView();
     fetch("data/mainpagecontent.json")
       .then((response) => response.json())
       .then((data) => {

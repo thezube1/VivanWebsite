@@ -3,6 +3,8 @@ import NavComplete from "../components/navcomplete";
 import ArticleText from "./articletext";
 import DateAuthor from "./dateauthor";
 
+import { initGA, PageView } from "./tracking/index";
+
 class ArticleFull extends Component {
   state = {
     title: this.props.title,
@@ -13,6 +15,11 @@ class ArticleFull extends Component {
     alt: this.props.alt,
     link: this.props.link,
   };
+
+  componentDidMount() {
+    initGA();
+    PageView();
+  }
   render() {
     return (
       <div>

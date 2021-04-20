@@ -3,6 +3,8 @@ import NavComplete from "../components/navcomplete";
 import AboutTitle from "../components/abouttitle";
 import AboutPageText from "../components/aboutpagetext";
 
+import { initGA, PageView } from "../components/tracking/index";
+
 class AboutPage extends Component {
   state = {
     Data: {
@@ -10,6 +12,8 @@ class AboutPage extends Component {
     },
   };
   componentDidMount = () => {
+    initGA();
+    PageView();
     fetch("data/aboutpagecontent.json")
       .then((response) => response.json())
       .then((data) => {
