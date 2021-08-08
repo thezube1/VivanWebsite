@@ -4,8 +4,9 @@ import LatestArticle from "./components/latestarticle";
 import AboutSection from "./components/aboutsection";
 import ArticleSpread from "./components/articlespread";
 import NavComplete from "./components/navcomplete";
+import BookAlert from "./components/bookalert";
 import CreditTab from "./components/credit";
-import "./App.css";
+import "./styles/App.css";
 
 import { initGA, PageView } from "./components/tracking/index";
 
@@ -47,6 +48,7 @@ class App extends Component {
     return (
       <div>
         <NavComplete />
+        <BookAlert />
         <div
           id="wrapper"
           style={{
