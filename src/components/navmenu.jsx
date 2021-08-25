@@ -48,6 +48,19 @@ class NavMenu extends Component {
           </div>
           <div>
             <Link
+              to="/book"
+              style={{
+                padding: 10,
+                outline: "1px solid",
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              Book
+            </Link>
+          </div>
+          <div>
+            <Link
               to="/about"
               style={{
                 padding: 10,

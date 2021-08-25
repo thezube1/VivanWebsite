@@ -11,6 +11,7 @@ import AboutPage from "./pages/about";
 import Newsletter from "./pages/newsletter";
 import AllArticles from "./pages/articles";
 import ArticleFull from "./components/articlefull";
+import BookPage from "./pages/book";
 
 let routes = [];
 
@@ -59,6 +60,7 @@ ReactDOM.render(
       <Route path="/about" component={AboutPage} />
       <Route path="/newsletter" component={Newsletter} />
       <Route path="/articles" component={AllArticles} />
+      <Route path="/book" component={BookPage} />
       {routes}
       <App />
     </Switch>

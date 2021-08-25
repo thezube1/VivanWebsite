@@ -34,6 +34,7 @@
 
 #aboutSection {
   grid-column: 1/3;
+  font-weight: 300;
 }
 
 body,

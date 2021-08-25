@@ -1,0 +1,141 @@
+#book-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-section {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 100%;
+  min-height: 1000px;
+  height: 100%;
+}
+
+#book-title-wrapper {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+#book-title-wrapper > div {
+  position: absolute;
+}
+
+#book-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 200px;
+  margin-right: 0px;
+  background-color: rgba(37, 37, 37, 0.1);
+  padding: 200px;
+  color: rgb(255, 203, 105);
+}
+
+#book-title-content {
+  text-shadow: -15px 0px rgb(37, 37, 37);
+}
+
+#book-title-black {
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 120px;
+  text-align: center;
+  color: rgb(37, 37, 37);
+  text-shadow: 5px 0px #ffffff;
+}
+
+#book-image {
+  max-width: 700px;
+  width: 100%;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+#book-synopsis-wrapper {
+  height: inherit;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+#book-synopsis {
+  font-size: 30px;
+  margin-right: 0px;
+  width: 90%;
+  max-width: 650px;
+}
+
+.book-button {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  font-family: "Cabin";
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(255, 203, 105);
+  text-decoration: none;
+  border-color: rgb(255, 203, 105);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 100px;
+  padding: 10px 0px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-top: 20px;
+}
+
+.book-button:hover {
+  background-color: rgb(255, 203, 105);
+  color: rgb(37, 37, 37);
+}
+
+.book-button:active {
+  border-color: rgb(230, 180, 88);
+  background-color: rgb(230, 180, 88);
+}
+
+.book-button-primary {
+  background-color: rgb(255, 203, 105);
+  color: black;
+}
+
+.book-button-primary:hover {
+  border-color: rgb(230, 180, 88);
+  background-color: rgb(230, 180, 88);
+}
+
+@media screen and (max-width: 2000px) {
+  #book-title {
+    padding: 150px;
+    font-size: 150px;
+    text-shadow: -10px 0px rgb(37, 37, 37);
+  }
+  #book-title-black {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #book-title {
+    padding: 50px;
+    font-size: 100px;
+    text-shadow: -5px 0px rgb(37, 37, 37);
+  }
+  #book-title-black {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #book-title {
+    padding: 35px;
+  }
+  #book-synopsis {
+    font-size: 20px;
+  }
+}
